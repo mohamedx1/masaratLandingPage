@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.svg";
 import { useModal } from "../../context/modalProvider";
+import { BASE_API_URL, MASARAT_URL } from "../../config";
 export default function NavBar() {
-
   // const [isOpen, setIsOpen] = useState(false);
-    const { modalIsOpen, setModalIsOpen } = useModal();
+  const { modalIsOpen, setModalIsOpen } = useModal();
 
   const [formData, setFormData] = useState({
     userType: "",
@@ -24,7 +24,7 @@ export default function NavBar() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/users/submit-application/",
+        `${BASE_API_URL}/users/submit-application/`,
         {
           method: "POST",
           headers: {
@@ -77,7 +77,7 @@ export default function NavBar() {
         </figure>
         <div className='flex md:gap-4 gap-1 ms-4'>
           <a
-            href='http://localhost:3000/masarat/survay'
+            href={`${MASARAT_URL}/masarat/survay`}
             target='_blank'
             rel='noopener noreferrer'
             className='md:text-text-sm text-text-xs md:font-medium font-light md:px-2 md:py-1 px-2 py-0 border border-black text-black rounded-xl hover:border-none hover:bg-slate-200 transition-all'
