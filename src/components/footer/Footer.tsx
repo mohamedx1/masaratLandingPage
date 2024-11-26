@@ -4,10 +4,10 @@ import logo from "../../images/footerLogo.png";
 import { Facebook, Instagram, Mail } from "lucide-react";
 export default function Footer() {
   return (
-    <div className='bg-primary-300 h-32 flex items-center justify-center   text-gray-800 '>
+    <div className='bg-primary-300 h-32 flex items-center justify-center   text-white '>
       <div className='md:container  flex justify-evenly md:gap-0 gap-4 '>
         <figure className='md:w-32 md:h-30 w-24 h-24 flex items-center '>
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='logo' className='invert' />
         </figure>
         <div className='text-center my-auto '>
           <p className='mb-2'>تواصل معنا </p>
@@ -23,7 +23,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href='mailto:example@gmail.com'>
+              <a href='mailto:hello@msaratedu.com'>
                 <Mail />
               </a>
             </li>
