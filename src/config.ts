@@ -4,7 +4,6 @@ export const MASARAT_URL = "http://localhost:3000"; //بتاع المنصة دا
 
 //    دا شكلها في الكود
 
-
 //  <a href={`${MASARAT_URL}/masarat/survay`}>   <== بوديه على صفحة معينة هناك
 //     تسجيل الدخول
 //  </a>

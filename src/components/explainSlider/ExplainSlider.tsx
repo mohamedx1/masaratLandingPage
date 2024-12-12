@@ -10,7 +10,7 @@ import sectionWafe from "../../images/sectionWave.png";
 function CustomSlide(props) {
   const { header, text, sr } = props;
   return (
-    <div className='h-1/2 flex  justify-between mb-8 text-white sm:mt-5 '>
+    <div className='h-1/2 flex  justify-between mb-8 text-white sm:mt-5  '>
       <div className='w-1/2  relative md:block hidden   '>
         <img
           src={require("../../images/LandingSliderAssets/landingSliderbg.png")}
@@ -34,11 +34,11 @@ function CustomSlide(props) {
         />
       </div>
       <div
-        className=' xl:w-1/3 lg:w-1/3 md:w-fit sm:w-fit sm:text-center my-auto  md:mx-auto sm:mx-auto'
+        className=' xl:w-1/3 lg:w-1/3 md:w-fit sm:w-fit   md:text-start my-auto  md:mx-auto sm:mx-auto'
         dir='rtl'
       >
-        <h2 className='text-text-2xl font-extrabold mb-10 start-0'>{header}</h2>
-        <p className='text-slate-200 text-text-md'>{text}</p>
+        <h2 className='text-4xl font-extrabold mb-10 start-0'>{header}</h2>
+        <p className='text-slate-200 text-text-lg'>{text}</p>
       </div>
     </div>
   );
@@ -59,7 +59,7 @@ export default function ExplainSlider() {
   return (
     <>
       <div className='bg-primary-300 pt-4'>
-        <div className='slider-container w-3/4 mx-auto pb-10 mb-2 '>
+        <div className='slider-container w-3/4 mx-auto pb-10 mb-2   '>
           <Slider {...settings}>
             <CustomSlide
               index={3}

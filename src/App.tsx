@@ -23,7 +23,7 @@ export default function App() {
         <AiTools />
         <UsersSection />
         <MasaratMianAdv />
-        <div className='h-52 bg-primary-300'></div>
+        <div className='h-52 bg-primary-300 '></div>
         <CommonQuestions />
         <Footer />
       </ModalProvider>

@@ -49,7 +49,7 @@ export default function HowMasaratWorks() {
           <div className='absolute right-1/2 h-[600px] w-1 bg-gradient-to-b from-purple-200 to-purple-400 hidden md:block' />
 
           {/* Steps */}
-          <div className='space-y-24 relative'>
+          <div className='space-y-11 relative'>
             {/* Step 1 - Right */}
             <motion.div
               variants={itemVariants}
@@ -58,8 +58,8 @@ export default function HowMasaratWorks() {
               <div className='hidden md:block w-1/2' />
               <div className='p-6 md:w-1/2 shadow-lg hover:shadow-xl transition-shadow bg-white/50 backdrop-blur rounded-lg'>
                 <div className='flex items-start gap-4'>
-                  <div className='p-3 rounded-full bg-purple-100'>
-                    <ChartNetwork className='w-6 h-6 text-purple-600' />
+                  <div className='p-3 rounded-full bg-purple-100 '>
+                    <ChartNetwork className='w-6 h-6 text-purple-600 ' />
                   </div>
                   <div>
                     <h3 className='text-xl font-semibold mb-2'>تحليل الأداء</h3>
@@ -121,41 +121,9 @@ export default function HowMasaratWorks() {
               </div>
             </motion.div>
           </div>
-
-          {/* Get Started Button */}
-          <motion.div className='text-center mt-16' variants={itemVariants}>
-            <button className='inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors'>
-              ابدأ الآن
-              <ArrowLeft className='w-4 h-4' />
-            </button>
-          </motion.div>
         </div>
 
         {/* Decorative Elements */}
-        <motion.div
-          className='absolute top-20 right-10 w-20 h-20 bg-purple-200 rounded-full opacity-20 blur-xl'
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.2, 0.3, 0.2],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-        <motion.div
-          className='absolute bottom-20 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 blur-xl'
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.2, 0.4, 0.2],
-          }}
-          transition={{
-            duration: 7,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
       </motion.div>
     </div>
   );

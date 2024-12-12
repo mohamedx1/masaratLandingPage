@@ -29,7 +29,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <p className='my-auto'>جميع الحقوق محفوظة &copy;</p>
+        <p className='my-auto'>
+          جميع الحقوق محفوظة لشركة مسارات التعلم الذكي - 2025 &copy;
+        </p>
       </div>
     </div>
   );

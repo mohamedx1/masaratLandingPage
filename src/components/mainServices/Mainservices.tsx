@@ -8,9 +8,9 @@ export default function Mainservices() {
   const services = [
     {
       icon: card1,
-      title: "شرح المحتوى من خلال أدوات تكيف المحتوى",
+      title: "التحضير للاختبارات",
       description:
-        "نتيح أدوات تكييف المحتوى لتقديم شروحات متخصصة لكل طالب، سواء كان ذلك من خلال تقنيات تعليمية سواء كان نصيا أو سمعيا. في جميع هذه الأدوات، نحن نركز على تعزيز فهم الطالب للمحتوى وتقديم تجربة تعليمية تناسب احتياجاته الفردية",
+        "توفر المنصة تدريبات إضافية وفرص عرض مستقبلية تتيح للطالب التحكم في التوقيت وتطوير نمط التعلم المستدام. الاختبارات تشمل تسجيل الإجابات مباشرة وكلمات تدرب موجهة لتعزيز الفهم والاستيعاب الفعال",
     },
     {
       icon: card2,
@@ -20,9 +20,9 @@ export default function Mainservices() {
     },
     {
       icon: card3,
-      title: "التحضير للاختبارات",
+      title: `شرح المحتوى من خلال أدوات  تكيف المحتوى`,
       description:
-        "توفر المنصة تدريبات إضافية وفرص عرض مستقبلية تتيح للطالب التحكم في التوقيت وتطوير نمط التعلم المستدام. الاختبارات تشمل تسجيل الإجابات مباشرة وكلمات تدرب موجهة لتعزيز الفهم والاستيعاب الفعال",
+        "نتيح أدوات تكييف المحتوى لتقديم شروحات متخصصة لكل طالب، سواء كان ذلك من خلال تقنيات تعليمية سواء كان نصيا أو سمعيا. في جميع هذه الأدوات، نحن نركز على تعزيز فهم الطالب للمحتوى وتقديم تجربة تعليمية تناسب احتياجاته الفردية",
     },
   ];
 
@@ -45,16 +45,18 @@ export default function Mainservices() {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto'>
           {services.map((service, index) => (
             <div key={index} className='bg-white text-center rounded-xl'>
-              <div className=' p-8'>
+              <div className='p-8'>
                 {/* Icon */}
                 <div className='w-16 h-16  mb-4  inline-block -mt-14'>
                   <img src={service.icon} alt='' />
                 </div>
 
                 {/* Content */}
-                <div className='w-3/4 mt-4 text-start'>
-                  <h3 className='text-lg font-bold mb-3'>{service.title}</h3>
-                  <p className='text-sm text-muted-foreground leading-relaxed'>
+                <div className=' mt-4 text-center'>
+                  <h3 className='text-text-xl font-bold mb-6 w-11/12 text-center mx-auto'>
+                    {service.title}
+                  </h3>
+                  <p className='text-text-md text-gray-800 leading-relaxed'>
                     {service.description}
                   </p>
                 </div>

@@ -72,7 +72,7 @@ export default function NavBar() {
   return (
     <nav className=' p-4 fixed w-full z-50 bg-white'>
       <div className='container flex justify-between'>
-        <figure className='w-20 md:w-28 flex justify-center'>
+        <figure className='w-32 flex justify-center'>
           <img src={logo} alt='masarat' className='w-full' />
         </figure>
         <div className='flex md:gap-4 gap-1 ms-4'>
@@ -80,7 +80,7 @@ export default function NavBar() {
             href={`${MASARAT_URL}/masarat/survay`}
             target='_blank'
             rel='noopener noreferrer'
-            className='md:text-text-sm text-text-xs md:font-medium font-light md:px-2 md:py-1 px-2 py-0 border border-black text-black rounded-xl hover:border-none hover:bg-slate-200 transition-all'
+            className='md:text-text-sm text-text-xs md:font-medium font-light md:px-2 md:py-1 px-2 py-0 border border-gray-400 text-black rounded-2xl hover:border-none hover:bg-slate-200 transition-all'
           >
             تسجيل الدخول
           </a>
@@ -133,11 +133,6 @@ export default function NavBar() {
                     >
                       <option value=''>اختر</option>
                       <option value='school'>مدرسة</option>
-                      <option value='educationalsServicesCompany'>
-                        شركة خدمات تعليمية
-                      </option>
-                      <option value='teacher'>مدرس</option>
-                      <option value='parent'>ولي امر</option>
                     </select>
                   </div>
 

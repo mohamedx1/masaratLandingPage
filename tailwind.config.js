@@ -22,7 +22,7 @@ module.exports = {
         backgroundGray: "#636363",
       },
       fontFamily: {
-        sans: ['"IBM Plex Sans Arabic"', "sans-serif"], // Set global font family
+        sans: ['"Tajawal"', "sans-serif"], // Set global font family
       },
       fontSize: {
         // Define only the font sizes and line heights

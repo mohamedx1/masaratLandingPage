@@ -84,12 +84,12 @@ export default function UsersSection() {
     <div className='bg-purple-600 p-12'>
       <div className='md:max-w-4xl max-w-4xl  mx-auto'>
         {/* Tabs */}
-        <div className=' flex md:w-fit  w-full   bg-secondary-300 rounded-t-xl   rtl'>
+        <div className=' flex md:w-fit   bg-secondary-300 rounded-t-xl   rtl'>
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={` px-2 py-1 md:py-2 md:px-4 md:font-medium  md:text-text-md text-text-sm transition-all ${
+              className={` px-1 py-1 md:py-2 md:px-4 md:font-medium font-light  text-sm transition-all ${
                 activeTab === tab.id
                   ? "bg-white rounded-tl-lg  text-black"
                   : "text-black bg-secondary-300"
